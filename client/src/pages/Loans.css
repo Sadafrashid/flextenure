@@ -1,0 +1,20 @@
+.loans-page { padding-top: 70px; }
+.loans-hero { background: linear-gradient(135deg, var(--navy), #1a3a6e); padding: 60px 0 40px; color: white; }
+.loans-hero h1 { color: white; margin-bottom: 12px; }
+.loans-hero p { color: rgba(255,255,255,0.7); font-size: 1.05rem; }
+.loans-container { padding-top: 40px; padding-bottom: 80px; }
+.loans-list { display: flex; flex-direction: column; gap: 20px; }
+.loan-list-card { display: flex; gap: 32px; align-items: center; padding: 28px; flex-wrap: wrap; }
+.llc-left { display: flex; gap: 20px; flex: 1; min-width: 300px; }
+.llc-icon { font-size: 2.5rem; flex-shrink: 0; width: 64px; height: 64px; background: var(--blue-pale); border-radius: 16px; display: flex; align-items: center; justify-content: center; }
+.llc-info h3 { color: var(--navy); margin-bottom: 6px; }
+.llc-info p { color: var(--gray-500); font-size: 0.875rem; margin-bottom: 12px; }
+.llc-features { display: flex; flex-wrap: wrap; gap: 8px; }
+.feature-tag { background: var(--mint-light); color: #065F46; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; }
+.llc-stats { display: flex; gap: 24px; }
+.llc-stat { text-align: center; min-width: 80px; }
+.llc-stat-val { font-size: 1.2rem; font-weight: 800; color: var(--navy); }
+.llc-stat-label { font-size: 0.72rem; color: var(--gray-400); margin-top: 2px; }
+.llc-actions { display: flex; flex-direction: column; gap: 10px; }
+.loading-state { text-align: center; padding: 60px; color: var(--gray-500); }
+@media (max-width: 768px) { .loan-list-card { flex-direction: column; } .llc-stats { justify-content: space-around; width: 100%; } }
