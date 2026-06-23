@@ -1,0 +1,86 @@
+.elig-page { padding-top: 70px; }
+.elig-hero { background: linear-gradient(135deg, #065F46, #047857); padding: 60px 0 40px; color: white; }
+.elig-hero h1 { color: white; margin-bottom: 12px; }
+.elig-hero p { color: rgba(255,255,255,0.8); font-size: 1.05rem; max-width: 540px; }
+.elig-container { padding-top: 40px; padding-bottom: 80px; max-width: 720px; }
+.progress-bar-wrap { display: flex; align-items: center; margin-bottom: 32px; }
+.progress-step { display: flex; align-items: center; flex: 1; }
+.progress-dot {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--gray-200); color: var(--gray-500);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.85rem; flex-shrink: 0;
+  z-index: 1; position: relative;
+}
+.progress-step.active .progress-dot { background: var(--mint); color: white; }
+.progress-step.done .progress-dot { background: var(--mint); color: white; }
+.progress-step span { margin-left: 8px; font-size: 0.85rem; font-weight: 600; color: var(--gray-400); white-space: nowrap; }
+.progress-step.active span { color: var(--navy); }
+.progress-line { flex: 1; height: 2px; background: var(--gray-200); margin: 0 8px; }
+.progress-step.done .progress-line { background: var(--mint); }
+.elig-card { padding: 40px; }
+.elig-step h2 { color: var(--navy); margin-bottom: 8px; }
+.step-desc { color: var(--gray-500); margin-bottom: 32px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.step-nav { display: flex; gap: 16px; margin-top: 8px; justify-content: space-between; }
+.loan-type-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 8px; }
+.loan-type-btn {
+  padding: 12px 8px; border: 2px solid var(--gray-200);
+  border-radius: 10px; background: white; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  font-size: 0.85rem; font-weight: 600; color: var(--gray-600);
+  transition: all 0.2s;
+}
+.loan-type-btn:hover { border-color: var(--blue); color: var(--blue); }
+.loan-type-btn.selected { border-color: var(--blue); background: var(--blue-pale); color: var(--blue); }
+.loan-type-btn span:first-child { font-size: 1.4rem; }
+.amount-display { font-size: 1.5rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+.input-prefix { position: relative; }
+.input-prefix span {
+  position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+  color: var(--gray-500); font-weight: 600; font-size: 1rem;
+}
+.input-prefix .form-control { padding-left: 28px; }
+
+/* Results */
+.elig-results { padding: 8px; }
+.result-header { text-align: center; margin-bottom: 32px; }
+.result-badge { display: inline-block; padding: 8px 24px; border-radius: 24px; font-weight: 700; margin-bottom: 16px; font-size: 1.1rem; }
+.result-badge.eligible { background: var(--mint-light); color: #065F46; }
+.result-badge.limited { background: #FEF3C7; color: #92400E; }
+.result-header h2 { color: var(--navy); margin-bottom: 20px; }
+.eligibility-score-bar { max-width: 400px; margin: 0 auto; }
+.score-bar-label { display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 600; color: var(--gray-600); margin-bottom: 8px; }
+.score-num { color: var(--blue); font-size: 1rem; }
+.score-bar-track { height: 10px; background: var(--gray-200); border-radius: 5px; overflow: hidden; }
+.score-bar-fill { height: 100%; background: linear-gradient(to right, #EF4444, #F59E0B, #10B981); border-radius: 5px; transition: width 1s ease; }
+.max-amount-box { text-align: center; background: var(--blue-pale); border-radius: 16px; padding: 24px; margin-bottom: 32px; }
+.max-amount-label { font-size: 0.85rem; color: var(--blue); font-weight: 600; margin-bottom: 8px; }
+.max-amount-value { font-size: 2.5rem; font-weight: 800; color: var(--navy); }
+.offers-section { margin-bottom: 32px; }
+.offers-section h3 { color: var(--navy); margin-bottom: 16px; }
+.offers-list { display: flex; flex-direction: column; gap: 12px; }
+.offer-card {
+  background: var(--off-white); border-radius: 12px; padding: 20px;
+  display: flex; align-items: center; gap: 20px;
+  border: 1px solid var(--gray-200); flex-wrap: wrap;
+}
+.offer-lender { display: flex; align-items: center; gap: 12px; min-width: 160px; }
+.lender-avatar { width: 44px; height: 44px; border-radius: 10px; background: var(--blue); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem; }
+.lender-name { font-weight: 700; color: var(--navy); font-size: 0.9rem; }
+.lender-approval { font-size: 0.75rem; color: var(--mint); font-weight: 600; margin-top: 2px; }
+.offer-details { display: flex; gap: 24px; flex: 1; }
+.offer-stat { text-align: center; }
+.ostat-val { font-weight: 700; color: var(--navy); font-size: 1rem; }
+.ostat-label { font-size: 0.72rem; color: var(--gray-400); margin-top: 2px; }
+.tips-section { background: #FEF3C7; border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+.tips-section h4 { color: #92400E; margin-bottom: 12px; }
+.tip-item { color: #78350F; font-size: 0.875rem; padding: 6px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+.tip-item:last-child { border-bottom: none; }
+@media (max-width: 640px) {
+  .form-row { grid-template-columns: 1fr; }
+  .loan-type-grid { grid-template-columns: repeat(2, 1fr); }
+  .elig-card { padding: 24px; }
+  .offer-card { flex-direction: column; align-items: flex-start; }
+  .progress-step span { display: none; }
+}

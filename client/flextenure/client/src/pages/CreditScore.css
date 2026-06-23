@@ -1,0 +1,56 @@
+.cs-page { padding-top: 70px; }
+.cs-hero { background: linear-gradient(135deg, #065F46, #047857); padding: 60px 0 40px; color: white; }
+.cs-hero h1 { color: white; margin-bottom: 12px; }
+.cs-hero p { color: rgba(255,255,255,0.85); font-size: 1.05rem; max-width: 560px; }
+.cs-container { padding-top: 40px; padding-bottom: 80px; }
+
+/* Gate (logged out) */
+.cs-gate-container { max-width: 560px; padding-top: 40px; padding-bottom: 100px; }
+.cs-gate-card { text-align: center; padding: 48px 32px; }
+.cs-gate-icon { font-size: 2.5rem; margin-bottom: 16px; }
+.cs-gate-card h2 { color: var(--navy); margin-bottom: 12px; }
+.cs-gate-card p { color: var(--gray-500); margin-bottom: 28px; }
+.cs-gate-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.cs-gate-note { margin-top: 24px; font-size: 0.82rem; color: var(--gray-400); }
+
+/* Top grid */
+.cs-top-grid { display: grid; grid-template-columns: 360px 1fr; gap: 24px; margin-bottom: 24px; }
+.cs-score-card { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 32px; }
+.cs-gauge { margin-bottom: 8px; }
+.cs-rating-pill { padding: 6px 18px; border-radius: 20px; font-weight: 700; font-size: 0.9rem; margin-bottom: 14px; }
+.cs-score-note { color: var(--gray-500); font-size: 0.85rem; }
+
+.cs-history-card h3 { color: var(--navy); margin-bottom: 20px; }
+.cs-sparkline-wrap { width: 100%; height: 120px; }
+.cs-sparkline { width: 100%; height: 100%; }
+.cs-trend-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; font-size: 0.85rem; color: var(--gray-500); font-weight: 600; }
+.cs-trend-change { color: var(--mint); }
+
+/* Factors */
+.cs-factors-card { margin-bottom: 24px; }
+.cs-factors-card h3 { color: var(--navy); margin-bottom: 20px; }
+.cs-factors-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.cs-factor-head { display: flex; justify-content: space-between; margin-bottom: 8px; }
+.cs-factor-label { font-weight: 700; color: var(--navy); font-size: 0.92rem; }
+.cs-factor-status { font-size: 0.78rem; font-weight: 700; color: var(--mint); }
+.cs-factor-bar-track { height: 8px; background: var(--gray-200); border-radius: 4px; overflow: hidden; margin-bottom: 8px; }
+.cs-factor-bar-fill { height: 100%; background: linear-gradient(to right, var(--blue), var(--mint)); border-radius: 4px; }
+.cs-factor-tip { font-size: 0.82rem; color: var(--gray-500); }
+
+/* Bottom grid */
+.cs-bottom-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; }
+.cs-tips-card h3 { color: var(--navy); margin-bottom: 16px; }
+.cs-tip-item { display: flex; gap: 10px; align-items: flex-start; color: var(--gray-600); font-size: 0.9rem; padding: 8px 0; border-bottom: 1px solid var(--gray-100); }
+.cs-tip-item:last-child { border-bottom: none; }
+.cs-tip-item span { color: var(--mint); font-weight: 700; }
+
+.cs-cta-card { display: flex; flex-direction: column; justify-content: center; background: linear-gradient(135deg, var(--navy), var(--navy-light)); color: white; text-decoration: none; }
+.cs-cta-amount { font-size: 1.8rem; font-weight: 800; margin-bottom: 6px; }
+.cs-cta-title { font-weight: 700; margin-bottom: 4px; }
+.cs-cta-sub { font-size: 0.85rem; color: rgba(255,255,255,0.75); }
+
+@media (max-width: 860px) {
+  .cs-top-grid { grid-template-columns: 1fr; }
+  .cs-factors-list { grid-template-columns: 1fr; }
+  .cs-bottom-grid { grid-template-columns: 1fr; }
+}
