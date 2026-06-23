@@ -16,3 +16,7 @@
     <div id="root"></div>
   </body>
 </html>
+<script>
+  var p = new URLSearchParams(window.location.search).get('p');
+  if (p) window.history.replaceState(null, null, '/flextenure' + p);
+</script>
