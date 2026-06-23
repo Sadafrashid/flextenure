@@ -2,17 +2,18 @@
   "homepage": "https://Sadafrashid.github.io/flextenure",
   "name": "flextenure-client",
   "version": "1.0.0",
+  "homepage": "https://Sadafrashid.github.io/flextenure",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "axios": "^1.6.2",
     "react": "^18.2.0",
+    "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.5.3",
     "react-router-dom": "^6.21.0",
     "react-scripts": "5.0.1",
-    "react-countup": "^6.5.0",
-    "react-intersection-observer": "^9.5.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -25,10 +26,23 @@
   },
   "proxy": "http://localhost:5000",
   "eslintConfig": {
-    "extends": ["react-app"]
+    "extends": [
+      "react-app"
+    ]
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
