@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/flextenure/static/css/main.49c76f99.css",
+    "main.js": "/flextenure/static/js/main.5017fced.js",
+    "index.html": "/flextenure/index.html",
+    "main.49c76f99.css.map": "/flextenure/static/css/main.49c76f99.css.map",
+    "main.5017fced.js.map": "/flextenure/static/js/main.5017fced.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49c76f99.css",
+    "static/js/main.5017fced.js"
+  ]
+}
